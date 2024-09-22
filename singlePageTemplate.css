@@ -9,6 +9,7 @@ body {
 	margin-left: 0px;
 	font-style: normal;
 	font-weight: 200;
+	overscroll-behavior-y: none;
 }
 .myClass {
 	color: aqua;
@@ -129,7 +130,7 @@ ul li:hover a {
 .hero {
 	padding-top: 120px;
 	padding-bottom: 40px;
-	background-image: url("../../Desktop/CircuitBoard.png");
+	background-image: url("images/Icons/CircuitBoard.png");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
