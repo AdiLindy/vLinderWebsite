@@ -1,5 +1,10 @@
 @charset "UTF-8";
 /* Body */
+
+html {
+		overscroll-behavior-y: none;
+}
+
 body {
 	font-family: source-sans-pro;
 	background: linear-gradient(to left, #291831, #002530, #291831);
