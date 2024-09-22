@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Light Theme</title>
+<link href="singlePageTemplate.css" rel="stylesheet" type="text/css">
+<!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
+<script>var __adobewebfontsappname__="dreamweaver"</script>
+<script src="http://use.edgefonts.net/source-sans-pro:n2:default.js" type="text/javascript"></script>
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="back">
+<!-- Main Container -->
+  <!-- Navigation -->
+  <header class="menu" id="menuBar"> <a href="vLinderIndex.html">
+	  </a>
+	  <a class="logoText" id="MainLogoText">vLinder</a>
+    <nav>
+      <ul>
+        <li><a href="vLinderIndex.html">HOME</a></li>
+        <li><a href="About.html">ABOUT</a></li>
+		<li> <a href="Projects.html" class="Projects.html">PROJECTS</a></li>
+        <li> <a href="Contact.html">PHOTOGRAPHY</a></li>
+      </ul>
+    </nav>
+  </header>
+	
+	<script>
+		window.onscroll = function() {Stick()};
+
+		var header = document.getElementById("menuBar");
+		var text = document.getElementById("MainLogoText");
+		var sticky = header.offsetTop;
+		function Stick() {
+		  if (window.pageYOffset > sticky) {
+			header.classList.add("sticky");
+			text.classList.add("logoTextAlt");
+		  } else {
+			header.classList.remove("sticky");
+			text.classList.remove("logoTextAlt");
+		  }
+		}
+	</script>
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <h1 class="hero_header">ABOUT</h1>
+<h1 class="tagline">Engineering Portfolio</h1>
+  </section>
+	
+	<div class="desholder">
+		<a class="aboutDes">I’m a High school student with an interest in engineering. For the past years, I’ve been teaching myself as much as I can about the engineering process through various projects. I enjoy being involved in every step of the process by being a generalist. As of now, I feel what I do is largely hobbyist and unimportant and that was fine for a while to challenge myself and learn. But recently I have wanted to devote what I’ve learned to something more impactful. With every project I work on comes a very gratifying feeling, but it could never be as rewarding as making something that could help others.
+I call the compilation of what I make vLinder and embellish my projects with a butterfly icon. Vlinder means butterfly in Dutch. When I was younger I had an odd fear of butterflies and most bugs, but it began to cross a line where I had an interest in them. And that’s something I like to explore when fear becomes a fascination.
+</a>
+	</div>
+	<a class="contactholder" href="https://www.linkedin.com/in/adi-lindstrom-455013290/">
+	<img src="images/Icons/linkedin-logo-3.png" alt=""/>
+	</a>
+	
+</body>
+</html>

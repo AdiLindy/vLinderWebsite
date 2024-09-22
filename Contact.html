@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Light Theme</title>
+<link href="singlePageTemplate.css" rel="stylesheet" type="text/css">
+
+	<script>var __adobewebfontsappname__="dreamweaver"</script>
+<script src="http://use.edgefonts.net/source-sans-pro:n2:default.js" type="text/javascript"></script>
+
+	
+</head>
+<body class="back">
+
+	
+	
+<header class="menu" id="menuBar"> <a href="vLinderIndex.html">
+	  </a>
+	  <a class="logoText" id="MainLogoText">vLinder</a>
+    <nav>
+      <ul>
+        <li><a href="vLinderIndex.html">HOME</a></li>
+        <li><a href="About.html">ABOUT</a></li>
+		<li> <a href="Projects.html" class="Projects.html">PROJECTS</a></li>
+        <li> <a href="Contact.html">PHOTOGRAPHY</a></li>
+      </ul>
+    </nav>
+  </header>
+
+	<section class="hero" id="hero">
+    <h1 class="hero_header">Photograghy</h1>
+<h1 class="tagline">photo Portfolio</h1>
+  </section>
+
+	
+<div class="photoHolder">
+		<a href="https://new.express.adobe.com/webpage/qrC4lQd0Uyh5w">
+<article class="grid-gallery appear">
+  <img src="images/Best Photos/Capuchino_09_08_2023_Adi (1).jpg" alt="description of picture 1" class="photo" />
+  <img src="images/Best Photos/Capuchino_09_08_2023_Adi (2).jpg" alt="description of picture 2" class="photo" />
+  <img src="images/Best Photos/Capuchino_09_08_2023_Adi.jpg" alt="description of picture 2" class="photo" />
+  <img src="images/Best Photos/Capuchino_09_08_2023_Adi (3).jpg" alt="description of picture 2" class="photo" />
+  <img src="images/Best Photos/MLP_1432_55.JPG" alt="description of picture 2" class="photo" />
+  <img src="images/Best Photos/HomeComingFootball_10_27_Adi_080.jpg" alt="description of picture 2" class="photo" />
+	<img src="images/Best Photos/HOCO_10_28_Adi_001.jpg" alt="description of picture 2" class="photo" />
+  <img src="images/Best Photos/HOCO_10_28_Adi_006.jpg" alt="description of picture 2" class="photo" />
+  <img src="images/Best Photos/DSC_2208.JPG" alt="description of picture 1" class="photo" />
+  <img src="images/Best Photos/HomeComingFootball_10_27_Adi_089.jpg" alt="description of picture 2" class="photo" />
+  <img src="images/Best Photos/MLP_1538_60.JPG" alt="description of picture 2" class="photo" />
+  <img src="images/Best Photos/DSC_2335.JPG" alt="description of picture 1" class="photo" />
+  <img src="images/Best Photos/HomeComingFootball_10_27_Adi_084.jpg" alt="description of picture 2" class="photo" />
+	
+			  <script>
+				const items = document.querySelectorAll('.appear');
+
+				const active = function(entries){
+					entries.forEach(entry => {
+						if(entry.isIntersecting){
+						entry.target.classList.add('inview'); 
+						}else{
+							entry.target.classList.remove('inview'); 
+						}
+					});
+				}
+				const io = new IntersectionObserver(active);
+				 for(let i=0; i < items.length; i++){
+					io.observe(items[i]);
+				 }
+		  </script>
+
+</article>
+  </a>
+  <div class="spacer">
+	<p> <a class="photoDes">In 8th grade, my dad bought me my first camera. It was a Nikon D600, which I still use today. My dad is a photographer who enjoys the art of photography, and finding new ways to look at the same subject, and he has always encouraged me to do the same. I’ve practiced photography with my father’s advice since, and in Junior year I used what I’ve learned for the school yearbook. It gave me a lot of opportunities to practice, and because of that all of the photos here are the photos I took for the school yearbook. I enjoy finding interesting lighting and compositions to include in my photography. To see a full catalog of what I did for the Los Altos High School yearbook, click on any of the images.</a></p>
+  </div>
+</div>
+	
+	<script>
+		window.onscroll = function() {Stick()};
+
+		var header = document.getElementById("menuBar");
+		var text = document.getElementById("MainLogoText");
+		var sticky = header.offsetTop;
+		function Stick() {
+		  if (window.pageYOffset > sticky) {
+			header.classList.add("sticky");
+			text.classList.add("logoTextAlt");
+		  } else {
+			header.classList.remove("sticky");
+			text.classList.remove("logoTextAlt");
+		  }
+		}
+	</script>
+	
+	
+	
+	
+	
+	
+	
+  <!-- Footer Section -->
+<!-- Main Container Ends -->
+</body>
+</html>

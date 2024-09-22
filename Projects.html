@@ -1,0 +1,357 @@
+
+
+<!doctype html>
+
+<html lang="en-US">
+<head>
+	
+<style>
+.myClass {
+  color: white;
+  background-color: DodgerBlue;
+  padding: 20px;
+  text-align: center;
+  margin: 10px;
+}
+</style>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Light Theme</title>
+<link href="singlePageTemplate.css" rel="stylesheet" type="text/css">
+<!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
+<script>var __adobewebfontsappname__="dreamweaver"</script>
+<script src="http://use.edgefonts.net/source-sans-pro:n2:default.js" type="text/javascript"></script>
+	
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="back">
+<!-- Main Container -->
+  <!-- Navigation -->
+  <header class="menu" id="menuBar"> <a href="../../Documents/vLinderIndex.html">
+	  </a>
+	  <a class="logoText" id="MainLogoText">vLinder</a>
+    <nav>
+      <ul>
+        <li><a href="vLinderIndex.html">HOME</a></li>
+        <li><a href="About.html">ABOUT</a></li>
+		<li> <a href="Projects.html" class="Projects.html">PROJECTS</a></li>
+        <li> <a href="Contact.html">PHOTOGRAPHY</a></li>
+      </ul>
+    </nav>
+  </header>
+	
+	<script>
+		window.onscroll = function() {Stick()};
+
+		var header = document.getElementById("menuBar");
+		var text = document.getElementById("MainLogoText");
+		var sticky = header.offsetTop;
+		function Stick() {
+		  if (window.pageYOffset > sticky) {
+			header.classList.add("sticky");
+			text.classList.add("logoTextAlt");
+		  } else {
+			header.classList.remove("sticky");
+			text.classList.remove("logoTextAlt");
+		  }
+		}
+	</script>
+	
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <h2 class="hero_header">PROJECTS</h2>
+  </section>
+  <!-- About Section -->
+  
+  <!-- Stats Gallery Section -->
+  <div class="projectContainer">
+	  
+	  	  <div class="projectColumn">
+	  <div class="projectBox appear">
+		 <a class="projectName">This Website</a>
+	  	<div class="goofyThumbnail"></div>
+		 <a class="projectDate">9/24</a>
+		 <a class="projectDescription">I want this website to serve as a hub for everything I create for myself, but mainly for others. When I talk about the things I’ve worked on, I can’t always find a good reference, and people are right to become speculative. I’d also like to look back on what I have done and see how I would have grown as an engineer. 
+This website was coded using HTML, CSS, and Javascript, each of which I taught myself throughout this project. Whenever I do a project using something foreign to me, like a new language, I test myself to make sure I understand the code. That's why there are features such as fading in components or the folding images pictures on the photography page. 
+The home page serves as an introduction to the website. The About page is about me, my contacts, and the projects in general. Meanwhile, the projects page compiles media and descriptions from various projects. Unless I mention other people, you can assume I’ve done the project mostly or entirely by myself and if anything was printed, I modeled it. The descriptions generally go in the order of the purpose of the project, how it was made, to how it was used. Clicking on the project media will put them into view. There are a lot of smaller things I’ve caded or larger things I’ve worked on that I didn’t include either because I thought they weren’t interesting, or because I didn’t feel right putting it on here.
+Although I’m not super happy with the design of the website, I am happy with how much I’ve learned about coding a website. 
+</a>
+		  <div>
+		  <div class="goofyMedia"></div>
+		  <div class="goofyOtherMedia"></div>
+		</div>
+	  </div>
+			  
+			  
+			  
+	  <div class="projectBox appear">
+		 <a class="projectName">Smart Water Regulation Node</a>
+	  	<img src="images/Shroom/ShoomNatural.png" alt="" class="projectThumbnail"/>
+		 <a class="projectDate">In Development</a>
+		 <a class="projectDescription">An Idea I explored for my capstone project was a system of electrically independent nodes that would communicate with one another to regulate water in a garden. The nodes would be solar power and be equipped with all sorts of sensors to monitor plant health, they report this information to a home base that regulates the water. hopefully, a stronger version of this system with more sensors could be used to monitor an entire forest, taking invaluable data that could be used to predict and fight fires by monitoring endangered areas and how fire could spread through an AI model.
+Thus far I’ve created a PCB for the individual nodes and how the communication system and prompts would work. The PCB has gone through a couple of iterations to get the moister sensor right and rearrange several other sensors. 
+</a>
+		  <div>
+		 <img src="images/Shroom/Screenshot 2024-08-16 at 9.04.29 PM.png" alt="" class="projectMedia"/>
+		 <img src="images/Shroom/Screenshot 2024-08-13 at 11.16.35 AM.png" alt="" class="projectOtherMedia"/>
+		 <img src="images/Shroom/Screenshot 2024-08-16 at 9.32.24 PM.png" alt="" class="projectOtherMedia"/>
+		 <img src="images/Shroom/Schematic_Hologram_2024-08-13.png" alt="" class="projectOtherMedia"/>
+		</div>
+
+	  </div>
+			  
+		<div class="projectBox appear">
+		 <a class="projectName">Robo-Prompter</a>
+	  	<img src="images/Prompter/IMG_8175.PNG" alt="" class="projectThumbnail"/>
+		 <a class="projectDate">4/23</a>
+		 <a class="projectDescription">During my time in my internship for PrompterPeople's sophomore year, I worked largely independently to create a prototype robotic teleprompter to work with a computer interface I coded. I later presented this project in their booth at the 100th annual NAB in Las Vegas. The interface would let you control the height, pan, and speed of arrival of the stand through sliders or typed values. There were also multiple save buttons to move to any predetermined position.
+For this project, I worked with linear actuators and stepper motors which could both be zeroed with a Hall Effect sensor. I used motor drivers, java, C++, solder, and serial communication to get the stand working, and I feel it taught me a lot about all of those subjects. It was very rewarding to see something I worked on for months presented in a professional setting.
+
+</a>
+		  <div>
+		<video autoplay muted loop class="projectMedia">
+		  <source src="images/Videos/TelePrompter.mp4" type="video/mp4">
+		</video>	
+		 <img src="images/Prompter/IMG_8174.PNG" alt="" class="projectOtherMedia"/>
+		<img src="images/Prompter/Screenshot 2024-09-22 at 1.19.02 PM.png" alt="" class="projectOtherMedia"/>
+		</div>
+	  </div>
+			  
+			  
+			  
+	  
+	  <div class="projectBox appear">
+		 <a class="projectName">Robot Arm</a>
+	  	<img src="images/Arm/ArmNatural.png" alt="" class="projectThumbnail"/>
+		 <a class="projectDate">5/24</a>
+		 <a class="projectDescription">Junior year for my final project in Trigonometry I wanted to make an omni-wheel robot, but instead, because of restrictions in the requirements, I decided to visit a project I had scrapped. The original idea was to have a robot arm paint using vector maps from any uploaded image. At the time I had trouble with the strength of the motors, but since then my abilities have improved.
+I used stronger motors, a lighter and smaller frame, and a better power supply, the combination of which was a bit overkill, but it worked. The microcontroller communicated with a computer interface to get points. These points were either a typed value or a drawn array of lines that it would iterate through. The microcontroller would do inverse kinematics using equations I derived using the segment lengths. 
+The Arm worked fine for a math demonstration, and I always enjoy using inverse kinematics in my code, but I still want the computer interface to be more autonomous. I’ve already created code to separate an image into subtractive colors, but I’m working on a good way of converting that into a vector array. 
+ 
+</a>
+		  <div>
+		 <img src="images/Arm/ArmNatural2.png" alt="" class="projectMedia"/>
+		  		 <img src="images/Arm/IMG_8173.PNG" alt="" class="projectOtherMedia"/>
+		 <img src="images/Arm/Armidol.png" alt="" class="projectOtherMedia"/>
+		</div>
+	  </div>
+			  
+			  
+			  
+			  	  <div class="projectBox appear">
+		 <a class="projectName">Optimized Fnaf</a>
+	  	<img src="images/Fnaf/Screenshot 2024-09-21 at 1.40.45 PM.png" alt="" class="projectThumbnail"/>
+		 <a class="projectDate">4/24</a>
+		 <a class="projectDescription">For my final math project sophomore year, I wanted to study parabolas and projectile motion. I did some research and settled on a launcher that would take the angles from an interface I coded to predict the necessary angle to launch an MandM into a detected face. This was my first experience with projectile motion so I had to teach the equations to myself.
+ I chose an MandM because I figured it would have low drag. I then picked up a really powerful spring, so powerful it could shatter the pellet on collision and tested the distance launched at different angles for the initial velocity. Everything was housed in a 3D printed enclosure, controlled by 3 servos (pan, tilt, trigger), which were controlled by an Arduino talking to my computer. The interface would take the webcam footage, draw squares around faces, and then by the size and position of the squares it could figure out the angles for the servos using trig functions, focal-point formula, and projectile motion.
+To use, stand within 7m of the gimbal and wait 3 seconds once it has recognized your face. I added two modes that would switch between the low and high-angle possible parabolas (I mostly used high angle). There was also a manual mode controlled by the cursor. The first model didn’t work as well as I wanted it to, but I made the gimbal more sturdy and retested the initial velocity, which made it a lot more efficient.
+</a>
+		  <div>
+		 <img src="images/Fnaf/Screenshot 2024-09-21 at 1.43.01 PM.png" alt="" class="projectMedia"/>
+		 <img src="images/Fnaf/Screenshot 2024-09-21 at 1.41.26 PM.png" alt="" class="projectOtherMedia"/>
+		 <img src="images/Fnaf/Screenshot 2024-09-21 at 1.41.45 PM.png" alt="" class="projectOtherMedia"/>
+		 <img src="images/Fnaf/Screenshot 2024-09-21 at 1.43.26 PM.png" alt="" class="projectOtherMedia"/>
+		</div>
+	  </div>
+			  
+			  
+			  
+	  <div class="projectBox appear">
+		 <a class="projectName">ASL Translator</a>
+	  	<img src="images/ASL/Screenshot 2024-09-10 at 6.29.36 PM.png" alt="" class="projectThumbnail"/>
+		 <a class="projectDate">11/22</a>
+		 <a class="projectDescription">Inspired by my non-verbal cousin, I started learning American Sign Language with my friends in the 7th grade. Since I’ve had an interest in the language. Early Sophomore year I wanted to test my CAD skills, so I challenged myself to make a hand to translate speech into the ASL alphabet in the hope it would encourage others to see the ease of learning ASL and take up a few words.
+The Hand is modeled off of my hand and went through 3 iterations. For each print, I started with a box and servos with wheels to tug on strings attached to the tip of each finger, which was resisted by rubber bands. The rubber bands could break easily so I replaced them by creating a cavity in the back of the hand for tension springs. The last interaction was just to clean up the design by using better springs, adding caps on the fingertips to conceal the strings, and making a box for it to fit on, a carriage for the servos, complete with a button for recording and lights for the direction of the sign. 
+I used a Raspberry Pi and a microphone to record speech, so the hand could make the corresponding movements. I also added voice commands such as “slow down”, “speed up” and “space”. The first two would change the sign speed, and the last would add or disclude spaces between signs that would ideally make them easier to read.
+I ran into a lot of problems with this project. Small ones like time constraints, and larger ones like the SD card corrupting, making me completely rewrite the code in a day. It taught me a lot about components and gave me my first experience using a Raspberry Pi.
+</a>
+		  <div>
+		<video autoplay muted loop class="projectMedia">
+		  <source src="images/Videos/Hand.mp4" type="video/mp4">
+		</video>	
+		 <img src="images/ASL/Screenshot 2024-09-10 at 6.26.59 PM.png" alt="" class="projectOtherMedia"/>
+		<img src="images/ASL/Screenshot 2024-09-10 at 6.28.16 PM.png" alt="" class="projectOtherMedia"/>
+		 <img src="images/ASL/Handprinted.png" alt="" class="projectOtherMedia"/>
+		</div>
+	  </div>
+	</div>
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  <div class="projectColumn">
+		  
+	  <div class="projectBox appear">
+		 <a class="projectName">StreetBoard</a>
+	  	<img src="images/Skateboard/SkateboardCoding.png" alt="" class="projectThumbnail"/>
+		 <a class="projectDate">In Development</a>
+		  <ul class="feautureList"> Feautures:
+			  <li> 35mph motors </li>
+			  <li> magnetic brake </li>
+			  <li> 36v 10ah battery </li>
+			  <li> 12v headlights </li>
+			 <li> 12v speaker system </li>
+			 <li> speaker modules flip from under </li>
+			 <li> servo leg brakes </li>
+			 <li> RGB light system </li>
+			  <li> drawer with servo lock </li>
+			   <li> space-grade aluminum back plate </li>
+			   <li> acceleration control </li>
+			   <li> 20m transmitting range </li>
+			   <li> physical spedometer </li>
+<li> speed saftey trigger </li>
+			  <li> battery reader </li>
+		  </ul>
+		 <a class="projectDescription">For the last couple of months, I’ve been working on an electric skateboard I built from scratch. This means I conceptualized it, selected components, CADed the incasing, designed the PCB, installed the hardware, soldered and wired the electronics, assembled the larger parts, and coded the processor. It's something I’ve thought about doing since my freshman year of high school, and I began working on it late into my junior year. 
+The idea is it can be used to get around smaller distances to save gas, and if the college allows it, navigate campuses. Most electric skateboards have a very short battery life because they have to fit in a tight spot under the skateboard. I wanted mine to last longer and operate at a high voltage, so instead I bought a larger battery and moved it from the bottom to the top of a longboard in its encasing. This not only allowed me a larger range but cleared up space in the incasing which I would need. 
+Electric skateboards also lacked features in my opinion, and because I had a lot more amperage to work with, I designed the incasing to include a drawer with a servo lock for belongings, servo-controlled parking legs, a dial for volume, a dial for acceleration control, and two high torque servos that control modules with 12v headlight and speakers that flip out from under the bottom, this all being in the addition to the near-instant acceleration, ~30mph speed, and eddy current brake. There were also some vestigial or less interesting features I left out.
+I also designed a PCB for the transmitter, which was inside an encasing located on the user's wrist along with potentiometers for some of the features a physical speed dial, and a voltmeter. This part has a handheld element that locks onto its top. The handheld element is for brake and speed. I used a 360 encoder to dial-up speed so it can’t accidentally go to 100% power. I also added a safety switch that needs to be pressed to put any power into the system. I haven’t tested it, but the range seems to be around 20m with no interferences. 
+A couple of problems exist in the design, and I haven’t coded some of the smaller features, but I added a coding port on the outside of the incasing so I can change the code whenever I need to. One of the problems I faced recently was the current demand for accelerating both the high torque servos at the same time. I solved this by moving the servos in series so the current demand is spread out.
+I faced many problems throughout this project. Namely, I underestimated the space I would need inside the encasing which made me have to rethink the design and model a new PCB. I was against making a new PCB because of the time and cost of manufacturing it, but I needed a more efficient voltage regulation, and I wanted to require everything with ribbon cables so it would be more organized. 
+I thought I could finish this project in 2 months and it took closer to 4, but it did give me good experience studying more advanced motors, transceivers, PCB design, and working with higher voltage.
+</a>
+		  <div>
+		<video autoplay muted loop class="projectMedia">
+		  <source src="images/Videos/Skateboard.mp4" type="video/mp4">
+		</video>	
+		 <img src="images/Skateboard/SkateboardFeaureBoard.png" alt="" class="projectOtherMedia"/>
+		<img src="images/Skateboard/Screenshot 2024-09-10 at 6.34.58 PM.png" alt="" class="projectOtherMedia"/>
+		 <img src="images/Skateboard/Screenshot 2024-09-10 at 6.35.15 PM.png" alt="" class="projectOtherMedia"/>
+		 <img src="images/Skateboard/Screenshot 2024-09-10 at 6.35.22 PM.png" alt="" class="projectOtherMedia"/>
+		 <img src="images/Skateboard/Screenshot 2024-09-10 at 6.38.59 PM.png" alt="" class="projectOtherMedia"/>
+		 <img src="images/Skateboard/Screenshot 2024-09-11 at 1.46.47 PM.png" alt="" class="projectOtherMedia"/>
+		 <img src="images/Skateboard/Screenshot 2024-09-10 at 6.44.49 PM.png" alt="" class="projectOtherMedia"/>
+		 <img src="images/Skateboard/Screenshot 2024-09-10 at 6.45.29 PM.png" alt="" class="projectOtherMedia"/>
+		 <img src="images/Skateboard/SkateboardIncasingOnBoard.png" alt="" class="projectOtherMedia"/>
+		</div>
+	  </div>
+			  
+			  
+			  
+			  
+			  
+			  
+	  <div class="projectBox appear">
+		 <a class="projectName">Pellet Launcher</a>
+	  	<img src="images/Launcher/Screenshot 2024-09-10 at 6.33.11 PM.png" alt="" class="projectThumbnail"/>
+		 <a class="projectDate">5/23</a>
+		 <a class="projectDescription">For my final math project sophomore year, I wanted to study parabolas and projectile motion. I did some research and settled on a launcher that would take the angles from an interface I coded to predict the necessary angle to launch an MandM into a detected face. This was my first experience with projectile motion so I had to teach the equations to myself.
+ I chose an MandM because I figured it would have low drag. I then picked up a really powerful spring, so powerful it could shatter the pellet on collision and tested the distance launched at different angles for the initial velocity. Everything was housed in a 3D printed enclosure, controlled by 3 servos (pan, tilt, trigger), which were controlled by an Arduino talking to my computer. The interface would take the webcam footage, draw squares around faces, and then by the size and position of the squares it could figure out the angles for the servos using trig functions, focal-point formula, and projectile motion.
+To use, stand within 7m of the gimbal and wait 3 seconds once it has recognized your face. I added two modes that would switch between the low and high-angle possible parabolas (I mostly used high angle). There was also a manual mode controlled by the cursor. The first model didn’t work as well as I wanted it to, but I made the gimbal more sturdy and retested the initial velocity, which made it a lot more efficient.
+</a>
+		  <div>
+		<video autoplay muted loop class="projectMedia">
+		  <source src="images/Videos/Launcher.mp4" type="video/mp4">
+		</video>	
+		 <img src="images/Launcher/Screenshot 2024-09-10 at 6.33.11 PM.png" alt="" class="projectOtherMedia"/>
+		</div>
+	  </div>
+			  
+		<div class="projectBox appear">
+		 <a class="projectName">Educational Robot Arm</a>
+	  	<img src="images/TinyArm/Screenshot 2024-09-10 at 6.41.26 PM.png" alt="" class="projectThumbnail"/>
+		 <a class="projectDate">In Development</a>
+		 <a class="projectDescription">In a previous project, I made a robot arm to demonstrate inverse kinematics for my Trig class. The Teacher mentioned wanting to show other classes, so I began designing a smaller version that could be more easily reproduced to show the same math. Thus far I’ve worked on a PCB and begun printing the arm segments. It will be a small servo arm controlled by potentiometers.</a>
+		  <div>
+		</div>
+	</div>
+	  
+	  <div class="projectBox appear">
+		 <a class="projectName">PCB Card</a>
+	  	<img src="images/Card/Screenshot 2024-09-10 at 6.40.53 PM.png" alt="" class="projectThumbnail"/>
+		 <a class="projectDate">In Development</a>
+		 <a class="projectDescription">Because the main cost of printing circuit boards is the shipping cost, I try to think of as many PCBs I can design to order them all at once. This is one of those ideas. I wanted it to be a cool way of giving people my contact information. The design of the PCB is a capacitor pump, which, depending on the components used and the frequency of the signal, should be pretty powerful. There are two contacts for output voltage and ground. I mainly haven’t finished this because I want to complete my website first. </a>
+		  <div>
+		 <img src="images/Card/Screenshot 2024-09-10 at 6.40.08 PM.png" alt="" class="projectMedia"/>
+		 <img src="images/Card/Screenshot 2024-09-10 at 6.41.02 PM.png" alt="" class="projectOtherMedia"/>
+	</div>
+	  </div>
+			  
+			  
+			  
+	  <div class="projectBox appear">
+		 <a class="projectName">Magenetic Speaker</a>
+	  	<img src="images/Speaker/Screenshot 2024-09-22 at 1.27.08 PM.png" alt="" class="projectThumbnail"/>
+		 <a class="projectDate">1/23</a>
+		 <a class="projectDescription">I found an old Bluetooth audio chip and wanted to use it well. I found some old speakers we weren’t using and took out the speakers themselves. I modified the chip by desoldering a small resistor which had a minor impact on the volume. The total circuit comprised two lithium batteries, a power switch, a voltmeter, the circuit, and two speakers for directional sound. I modeled the incasing in two pieces. The design is very exposed on purpose. I put the speakers tangent to one another rather than on either end because I believed it had more positions to place it in and to test my theory that placing this configuration in the corner of a room would reverberate the sound better. The back had a really powerful magnet that stuck to any metal surface. There are also rails on the back for the speaker to slide into stations I made for the speaker. This speaker served me well, both for music and as a short project.</a>
+		  <div>
+		<video autoplay muted loop class="projectMedia">
+		  <source src="images/Videos/Speaker.mp4" type="video/mp4">
+		</video>	
+		</div>
+	  </div>
+		  
+		  
+		 <div class="projectBox appear">
+		 <a class="projectName">Heated Lunch Box</a>
+	  	<img src="images/LunchBox/Screenshot 2024-09-22 at 1.44.52 PM.png" alt="" class="projectThumbnail"/>
+		 <a class="projectDate">8/23</a>
+		 <a class="projectDescription">Junior year I wanted to be a bit healthier, and I hated the lunches being served at school, so I assigned myself a short project to work on. That is a self-heating lunch box.
+I bought a tin box, cleaned and sealed it, then 3D model an incasing for it and the electronics. The electronics were straightforward, a 12v input would heat coils, light an LED, and spin small fans to make sure the plastic was solid (but also to look cool). I also included magnets to make everything snap together, and the hinge doubled at the handle. 
+The design worked well in that it heated up very quickly, especially if you added water to steam the inside. In all honesty, I don’t use it very much but it served its purpose of being a short thing for me to learn from. In the future, I’d want to make the materials softer to conform more to what is inside and add a better way to steam the inside.
+</a>
+		  <div>
+		<video autoplay muted loop class="projectMedia">
+		  <source src="images/Videos/LunchBox.mp4" type="video/mp4">
+		</video>	
+		</div>
+	  </div>
+		  
+		  
+		  
+	</div>
+	 	  
+		  <script>
+				const items = document.querySelectorAll('.appear');
+
+				const active = function(entries){
+					entries.forEach(entry => {
+						if(entry.isIntersecting){
+						entry.target.classList.add('inview'); 
+						}else{
+							entry.target.classList.remove('inview'); 
+						}
+					});
+				}
+				const io = new IntersectionObserver(active);
+				 for(let i=0; i < items.length; i++){
+					io.observe(items[i]);
+				 }
+		  </script>
+	  
+	 	</div>
+
+	  
+	  	
+	
+	
+	
+  <!-- Hero Section -->
+
+  <!-- About Section -->
+  <!-- Stats Gallery Section -->
+  <!-- Parallax Section -->
+  <!-- Footer Section -->
+
+  <!-- Copyrights Section -->
+<!-- Main Container Ends -->
+</body>
+</html>
