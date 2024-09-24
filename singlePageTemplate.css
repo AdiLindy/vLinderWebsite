@@ -605,7 +605,7 @@ nav ul li {
 	align-itmes: top;
 	display: grid;
 	grid-template-columns: auto;
-	gap: 7%;
+	gap: 5%;
 	padding-left: 10%;
 	padding-right: 10%;
 }
