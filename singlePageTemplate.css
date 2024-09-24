@@ -377,6 +377,7 @@ footer .footer_column p {
 
 
 .appear {
+transform: translateY(100px);
   transition: all 0.4s;
   opacity: 0;
 }
@@ -385,7 +386,6 @@ footer .footer_column p {
   opacity: 1;
   transform: none;
   transition-delay: 0.2s;
-	width:100%;
 }
 
 .appear2 {
@@ -447,7 +447,7 @@ footer {
 	width: 20%;
 }
 /* Mobile */
-@media (max-width: 320px) {
+@media (max-width : 846px ){
 
 .container header nav {
 	margin-top: 0px;
@@ -612,7 +612,6 @@ nav ul li {
 
 .projectBox {
 	gap: 25px;
-	width: 70%;
 	align-self: top;
 	display: grid;
 	grid-template-columns: auto;
