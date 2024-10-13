@@ -59,7 +59,22 @@
   <!-- Parallax Section -->
 	<h2 class="parallax">SPOTLIGHT</h2>
   <section class="banner">
-		<video autoplay muted loop class="spotlightVid">
+		<video autoplay muted loop class="spotlightVid appear">
+			<script>
+				const appear = document.querySelector('.appear'); 
+
+				const cb = function(entries){
+				  entries.forEach(entry => {
+					if(entry.isIntersecting){
+					  entry.target.classList.add('inview');
+					}else{
+					  entry.target.classList.remove('inview');
+					}
+				  });
+				}
+				const io = new IntersectionObserver(cb);
+				io.observe(appear);
+			</script>
 		  <source src="images/Videos/Skateboard.mp4" type="video/mp4">
 		</video>
 	  <div class="parallax_description"> <a>For the last couple of months, I’ve been working on an electric skateboard I built from scratch. This means I conceptualized it, selected components, CADed the incasing, designed the PCB, installed the hardware, soldered and wired the electronics, assembled the larger parts, and coded the processor.
@@ -129,7 +144,7 @@ The idea is it can be used to get around smaller distances to save gas, and if t
 			  	const appear2 = document.querySelector('.Electrical'); 
 			  	const appear3 = document.querySelector('.Coding'); 
 
-				const cb = function(entries){
+				const cba = function(entries){
 				  entries.forEach(entry => {
 					if(entry.isIntersecting){
 					  entry.target.classList.add('inview');
@@ -138,10 +153,10 @@ The idea is it can be used to get around smaller distances to save gas, and if t
 					}
 				  });
 				}
-				const io = new IntersectionObserver(cb);
-				io.observe(appear1);
-			  	io.observe(appear2);
-			  	io.observe(appear3);
+				const ioa = new IntersectionObserver(cb);
+				ioa.observe(appear1);
+			  	ioa.observe(appear2);
+			  	ioa.observe(appear3);
 		  </script>
   </div>
   <!-- Footer Section -->

@@ -263,22 +263,18 @@ ul li:hover a {
 }
 
 .CAD.inview {
-font-family: system-ui;
-	width: 100%;
 	transition: all 0.8s;
   opacity: 1;
   transform: none;
 }
 
 .Electrical.inview {
-		width: 100%;
 	transition: all 1.2s;
   opacity: 1;
   transform: none;
 }
 
 .Coding.inview {
-		width: 100%;
 	transition: all 1.6s;
   opacity: 1;
   transform: none;
@@ -329,6 +325,9 @@ font-family: system-ui;
 
 .spotlightVid {
 	width: 100%;
+	padding-top: 40px;
+	border-bottom-right-radius: 40px;
+	border-top-right-radius: 40px;
 }
 
 
@@ -378,26 +377,16 @@ footer .footer_column p {
 
 .appear {
 transform: translateY(100px);
-  transition: all 0.4s;
+  transition: all 0.5s ease-out;
+transition-timing-function: ease-out;
   opacity: 0;
 }
 
 .appear.inview {
   opacity: 1;
   transform: none;
-  transition-delay: 0.2s;
-}
-
-.appear2 {
-  transition: all 0.8s;
-  opacity: 0;
-  transform: translateY(40px);
-}
-
-.appear2.inview2 {
-  opacity: 1;
-  transform: none;
-  transition-delay: 0.3s;
+  transition-delay: 0.5s;
+transition-timing-function: ease-out;
 }
 
 .button {
@@ -588,12 +577,12 @@ nav ul li {
 
 .projectContainer {
 	align-self: top;
-	height:100%;
 	display: grid;
   	grid-template-columns: auto auto;
 	background-color: rgba(0);
 	gap: 100px;
 	padding: 10%;
+	padding-bottom: 100%;
 
 
 }
